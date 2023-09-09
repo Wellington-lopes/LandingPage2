@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+.back {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    background-color: rgb(16, 170, 187);
+    color: white;
+    height: 8vh;
+    display: flex;
+    text-align: center;
+    padding: 1%;
+    margin: 0;
+    width: 100vw;
+}
+
+
+main {
+    width: 100vw;
+}
+
+.main-r {
+    background-color: rgb(209, 208, 208, 0.7);
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto h2 {
+    font-weight: 800;
+}
+
+.texto h3 {
+    font-weight: 500;
+    padding-bottom: 3%;
+}
+
+.footer {
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+    margin-top: 60vh;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+input {
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 5px;
+}
+
+input:focus{
+    border-color: rgb(166, 228, 247);
+}
+
+.inputconfig input {
+    margin: 10px 3px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93vw;
+    margin-top: 0.4rem;
+}
+
+.btn:hover {
+    background-color: rgb(5, 5, 94);
+}
+
+main img {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+}
+
+.footer-texto {
+    color: white;
+}
+
+
+@media screen and (min-width: 80rem) {
+
+    .back{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        max-width: 70vw;
+        height: 100vh;   
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .main-r {
+        background-color: rgb(209, 208, 208, 0.7);
+        max-width: 30vw;
+        height: 63vh;
+        position: absolute;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        margin-top: 5vh;
+        margin-left: 45%;
+    }
+
+    main h1 {
+        color: white;
+        background-color: rgb(16, 170, 187);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        max-width: 65vw;
+        font-size: 2.44rem;
+        padding: 0.5rem;
+    }
+
+    main img {
+        max-width: 65vw;
+        margin: 0;
+        position: absolute;
+        max-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto h2 {
+        font-weight: 800;
+        margin: 2rem;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+    
+    .texto h3 {
+        font-weight: 500;
+        margin: 2rem;
+        font-size: 1.4rem;
+    }
+
+    input {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        outline: none;
+        padding: 5px;
+    }
+    
+    .inputconfig input {
+        margin: 10px 3px;
+    }
+        
+    input:focus{
+        border-color: rgb(166, 228, 247);
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.4rem;
+    }
+
+    .footer {
+        background-color: rgb(62, 62, 62);
+        max-width: 65vw;
+        display: flex;
+        margin-top: 62.7rem;
+        padding: 4rem;
+        position: absolute;
+        margin-right: 5.9rem;
+        height: 30rem;
+        margin-left: 5%;
+    }
+
+    .footer-texto {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 9rem;
+        margin-left: 25rem;
+        position: absolute;
+    }
+
+    .left{
+        display: flex;
+        background-image: url(./assets/pessoa.png);
+        background: cover;
+        background-size: 32vh;
+        background-repeat: no-repeat;
+        width: 15vw;
+        height: 32vh;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0 10rem 10rem;
+
+    }
+}
